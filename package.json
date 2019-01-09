@@ -1,14 +1,15 @@
 {
   "name": "electron-quick-start",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A minimal Electron application",
   "main": "electron.js",
   "scripts": {
+    "ship": "electron-builder --mac -p always",
     "start": "electron .",
     "pack": "electron-builder --dir",
     "dist": "electron-builder",
-    "build": "electron-builder --mac",
-    "ship": "electron-builder --mac -p always"
+    "postinstall": "electron-builder install-app-deps",
+    "release": "build"    
   },
   "author": "GitHub",
   "devDependencies": {
@@ -16,7 +17,10 @@
     "electron-packager": "13.0.1",
     "electron-builder": "20.38.4"
   },
-  "repository": "",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:DiogoCercilio/electron-update.git"
+  },
   "license": "MIT",
   "dependencies": {
     "electron-updater": "4.0.6"
@@ -24,11 +28,11 @@
   "build": {
     "appId": "hello-my-app",
     "mac": {
-      "category": "your.app.category.type"
+      "category": "public.app-category.developer-tools",
+      "type": "distribution"
     },
-    "nsis": {
-      "oneClick": false,
-      "allowToChangeInstallationDirectory": true
-    }
+    "publish": [
+      "github"
+    ]    
   }
 }
