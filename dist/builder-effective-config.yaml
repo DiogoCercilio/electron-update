@@ -1,0 +1,10 @@
+directories:
+  output: dist
+  buildResources: build
+appId: hello-my-app
+mac:
+  category: public.app-category.developer-tools
+  type: distribution
+publish:
+  - github
+electronVersion: 4.0.1

@@ -1,0 +1,4 @@
+owner: DiogoCercilio
+repo: electron-update
+provider: github
+updaterCacheDirName: electron-quick-start-updater

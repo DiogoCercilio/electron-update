@@ -1,15 +1,15 @@
 {
   "name": "electron-quick-start",
-  "version": "1.0.1",
+  "version": "1.0.6",
   "description": "A minimal Electron application",
   "main": "electron.js",
   "scripts": {
-    "ship": "electron-builder --mac -p always",
+    "ship": "electron-builder --win -p always",
     "start": "electron .",
-    "pack": "electron-builder --dir",
-    "dist": "electron-builder",
+    "pack": "electron-builder --dir --win",
+    "dist": "electron-builder --win",
     "postinstall": "electron-builder install-app-deps",
-    "release": "build"    
+    "release": "export GH_TOKEN=cace68001f025218abf40fae471b71e5a942f758 && build"
   },
   "author": "GitHub",
   "devDependencies": {
@@ -33,6 +33,6 @@
     },
     "publish": [
       "github"
-    ]    
+    ]
   }
 }
