@@ -1,15 +1,10 @@
 {
   "name": "electron-quick-start",
-  "version": "1.1.0",
+  "version": "1.1.2",
   "description": "A minimal Electron application",
   "main": "electron.js",
   "scripts": {
-    "ship": "electron-builder --win -p always",
-    "start": "electron .",
-    "pack": "electron-builder --dir --win",
-    "dist": "electron-builder --win",
-    "postinstall": "electron-builder install-app-deps",
-    "release": "export GH_TOKEN=d5f6ca9c2d213a01b0ce648e45eab62cb5a4b987 && build --win"
+    "release": "export GH_TOKEN=e119957a880f59cec6050315c5abaaeb1536aecd && build --win -p always"
   },
   "author": "GitHub",
   "devDependencies": {
@@ -20,10 +15,6 @@
   "repository": {
     "type": "git",
     "url": "git@github.com:DiogoCercilio/electron-update.git"
-  },
-  "license": "MIT",
-  "dependencies": {
-    "electron-updater": "4.0.6"
   },
   "build": {
     "appId": "hello-my-app",

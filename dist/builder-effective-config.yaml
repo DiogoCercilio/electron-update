@@ -1,9 +1,0 @@
-directories:
-  output: dist
-  buildResources: build
-appId: hello-my-app
-win:
-  target: NSIS
-publish:
-  - github
-electronVersion: 4.0.1
