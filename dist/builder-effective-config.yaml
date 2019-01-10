@@ -2,9 +2,8 @@ directories:
   output: dist
   buildResources: build
 appId: hello-my-app
-mac:
-  category: public.app-category.developer-tools
-  type: distribution
+win:
+  target: NSIS
 publish:
   - github
 electronVersion: 4.0.1
