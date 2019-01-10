@@ -9,7 +9,7 @@
     "pack": "electron-builder --dir --win",
     "dist": "electron-builder --win",
     "postinstall": "electron-builder install-app-deps",
-    "release": "export GH_TOKEN=d532963556e7e1c7bef3589adf526bef0ceb9d2d && build --win"
+    "release": "export GH_TOKEN=d5f6ca9c2d213a01b0ce648e45eab62cb5a4b987 && build --win"
   },
   "author": "GitHub",
   "devDependencies": {
